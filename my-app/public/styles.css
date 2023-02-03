@@ -40,6 +40,48 @@ body {
 
 .navbar-toggler.collapsed {
   background-color: var(--clr-slate-blue);
+  transition: transform 0.2s; /* Animation for zoom in effect */
+}
+
+.navbar-toggler:hover {
+  background-color: var(--clr-blue-purple);
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+a.nav-link {
+  font-size: 120%;
+}
+
+a.nav-link.active:hover,
+a.nav-link.active:focus,
+a.nav-link.active:active {
+  color: var(--clr-middle-blue);
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+.unactive-link {
+  color: var(--clr-space-cadet);
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.unactive-link:hover,
+.unactive-link:focus,
+.unactive-link:active {
+  color: var(--clr-middle-blue);
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
 }
 
 /* ABOUT */
@@ -159,6 +201,7 @@ footer {
 .wobble-vertical-on-hover:hover,
 .wobble-vertical-on-hover:focus,
 .wobble-vertical-on-hover:active {
+  color: var(--clr-blue-purple);
   -webkit-animation-name: wobble-vertical-on-hover;
   animation-name: wobble-vertical-on-hover;
   -webkit-animation-duration: 1s;
