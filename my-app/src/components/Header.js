@@ -1,8 +1,16 @@
 import React from "react";
-import Navbar from "./Navbar";
+import CustomNavbar from "./Custom-navbar";
 
-function Header() {
-  return <div></div>;
+function Header(props) {
+  const { currentSection, setCurrentSection } = props;
+  return (
+    <header>
+      <CustomNavbar
+        currentSection={currentSection}
+        setCurrentSection={setCurrentSection}
+      ></CustomNavbar>
+    </header>
+  );
 }
 
 export default Header;

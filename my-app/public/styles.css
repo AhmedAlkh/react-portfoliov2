@@ -11,13 +11,160 @@
   --clr-light-coral: #ec9192;
   --clr-persian-green: #1b998b;
   /* FONT FAMILIES */
-  --ff-eczar: "Eczar", serif;
+  --ff-itim: "Itim", cursive;
+}
+/* GLOBAL STYLING */
+body {
+  background-color: var(--clr-slate-blue) !important;
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png") !important;
+  font-family: var(--ff-itim) !important;
 }
 
-/* GLOBAL STYLING */
+.center {
+  --measure: 540px;
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure);
+}
 
-body {
+/* NAVBAR */
+.main-title {
+  color: var(--clr-space-cadet);
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.nav-cont.container {
+  margin-left: 0;
+}
+
+.navbar-toggler.collapsed {
   background-color: var(--clr-slate-blue);
-  background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
-  font-family: var(--ff-eczar);
+}
+
+/* ABOUT */
+.about main {
+  display: flex-block;
+  justify-content: center;
+  text-align: center;
+  font-weight: 400;
+  background-color: rgba(90, 110, 156, 0);
+  width: 90%;
+  border-radius: 10px;
+}
+
+.about main p {
+  color: var(--clr-space-cadet);
+  font-weight: 700;
+  font-size: 18px;
+  margin-block: 0 12px;
+}
+
+.about img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  margin-top: auto;
+}
+
+.footerDiv {
+  bottom: 0;
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-icon {
+  width: 80px; /* adjust the distince between the icons */
+  color: var(--clr-middle-blue);
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.footerText {
+  color: var(--clr-space-cadet);
+  font-size: 14px;
+}
+
+@-webkit-keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.wobble-vertical-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.wobble-vertical-on-hover:hover,
+.wobble-vertical-on-hover:focus,
+.wobble-vertical-on-hover:active {
+  -webkit-animation-name: wobble-vertical-on-hover;
+  animation-name: wobble-vertical-on-hover;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
