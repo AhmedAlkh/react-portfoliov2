@@ -1,0 +1,20 @@
+:root {
+  /* COLORS */
+  --clr-slate-blue: #5a6e9c;
+  --clr-liberty-purple: #53599a;
+  --clr-space-cadet: #2d3047;
+  --clr-jet: #333333;
+  --clr-blue-purple: #9dacff;
+  --clr-sky-blue: #76e5fc;
+  --clr-middle-blue: #4bc0d9;
+  --clr-blush: #db5375;
+  --clr-light-coral: #ec9192;
+  --clr-persian-green: #1b998b;
+  /* FONT FAMILIES */
+  --ff-eczar: "Eczar", serif;
+}
+
+body {
+  background-color: var(--clr-slate-blue);
+  background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+}
