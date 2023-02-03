@@ -1,5 +1,11 @@
+import Particles from "./components/Particles";
+
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div>
+      <Particles />
+    </div>
+  );
 }
 
 export default App;
