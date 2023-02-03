@@ -14,7 +14,10 @@
   --ff-eczar: "Eczar", serif;
 }
 
+/* GLOBAL STYLING */
+
 body {
   background-color: var(--clr-slate-blue);
   background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
+  font-family: var(--ff-eczar);
 }
