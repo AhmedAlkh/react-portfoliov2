@@ -5,7 +5,7 @@ import { FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className="footerDiv">
+    <div className="footer">
       {/* GitHub link in footer  */}
       <a href="https://github.com/AhmedAlkh" target="_blank" rel="noreferrer">
         <FaGithub className="footer-icon wobble-vertical-on-hover" />

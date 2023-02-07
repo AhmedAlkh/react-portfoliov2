@@ -14,8 +14,7 @@ function About() {
             development course at University of Toronto(SCS) in 2022. Since
             then, I have been coding independantly and improving my skills. Some
             things I enjoy doing in my spare time include working out, playing
-            video games, watching movies, listening to music, and spending time
-            with friends and family.
+            video games, watching movies, and listening to music.
           </p>
           <p>
             Check out some of the projects I've built! I am constantly building

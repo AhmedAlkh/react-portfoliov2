@@ -13,40 +13,56 @@ function CustomNavbar(props) {
         <Navbar.Brand>
           <p className="main-title">Ahmed's Portfolio</p>
         </Navbar.Brand>
+
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
-            <Nav.Link href="#" className={currentSection === "about"}>
-              <span
-                className="unactive-link"
-                onClick={() => setCurrentSection("about")}
-              >
-                About
-              </span>
+            <Nav.Link
+              href="#"
+              className={
+                currentSection === "about"
+                  ? "nav-link active"
+                  : "nav-link unactive-link"
+              }
+              onClick={() => setCurrentSection("about")}
+            >
+              About
             </Nav.Link>
-            <Nav.Link href="#" className={currentSection === "portfolio"}>
-              <span
-                className="unactive-link"
-                onClick={() => setCurrentSection("portfolio")}
-              >
-                Portfolio
-              </span>
+
+            <Nav.Link
+              href="#"
+              className={
+                currentSection === "portfolio"
+                  ? "nav-link active"
+                  : "nav-link unactive-link"
+              }
+              onClick={() => setCurrentSection("portfolio")}
+            >
+              Portfolio
             </Nav.Link>
-            <Nav.Link href="#" className={currentSection === "resume"}>
-              <span
-                className="unactive-link"
-                onClick={() => setCurrentSection("resume")}
-              >
-                Resume
-              </span>
+
+            <Nav.Link
+              href="#"
+              className={
+                currentSection === "resume"
+                  ? "nav-link active"
+                  : "nav-link unactive-link"
+              }
+              onClick={() => setCurrentSection("resume")}
+            >
+              Resume
             </Nav.Link>
-            <Nav.Link href="#" className={currentSection === "contact"}>
-              <span
-                className="unactive-link"
-                onClick={() => setCurrentSection("contact")}
-              >
-                Contact
-              </span>
+
+            <Nav.Link
+              href="#"
+              className={
+                currentSection === "contact"
+                  ? "nav-link active"
+                  : "nav-link unactive-link"
+              }
+              onClick={() => setCurrentSection("contact")}
+            >
+              Contact
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
