@@ -81,6 +81,7 @@ function Portfolio() {
               />
             ))}
           </div>
+          <div className="link-wrapper">
           <Button
             className="app-link"
             href={project.appLink}
@@ -99,6 +100,7 @@ function Portfolio() {
             GitHub Repo
             <FaGithub className="btn-icon" />
           </Button>
+          </div>
         </div>
       ))}
       <button
