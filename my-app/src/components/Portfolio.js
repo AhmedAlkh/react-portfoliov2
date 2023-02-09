@@ -65,63 +65,65 @@ function Portfolio() {
   }, [myProjects.length]);
 
   return (
-    <div className="carousel">
-      {myProjects.map((project, index) => (
-        <div
-          className={`slide ${index === activeIndex ? "active" : ""}`}
-          key={project.title}
+    <div className="carousel-container">
+      <div className="carousel">
+        {myProjects.map((project, index) => (
+          <div
+            className={`slide ${index === activeIndex ? "active" : ""}`}
+            key={project.title}
+          >
+            <h2>{project.title}</h2>
+            <img src={project.src} alt={project.alt} />
+            <div className="dots">
+              {myProjects.map((_, index) => (
+                <div
+                  className={`dot ${index === activeIndex ? "active" : ""}`}
+                  onClick={() => setActiveIndex(index)}
+                />
+              ))}
+            </div>
+            <div className="link-wrapper">
+              <Button
+                className="app-link"
+                href={project.appLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Link
+                <FaArrowCircleRight className="btn-icon" />
+              </Button>
+              <Button
+                className="gh-link"
+                href={project.ghLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repo
+                <FaGithub className="btn-icon" />
+              </Button>
+            </div>
+          </div>
+        ))}
+        <button
+          className="prev"
+          onClick={() =>
+            setActiveIndex(
+              (prevIndex) =>
+                (prevIndex + myProjects.length - 1) % myProjects.length
+            )
+          }
         >
-          <h2>{project.title}</h2>
-          <img src={project.src} alt={project.alt} />
-          <div className="dots">
-            {myProjects.map((_, index) => (
-              <div
-                className={`dot ${index === activeIndex ? "active" : ""}`}
-                onClick={() => setActiveIndex(index)}
-              />
-            ))}
-          </div>
-          <div className="link-wrapper">
-          <Button
-            className="app-link"
-            href={project.appLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Live Link
-            <FaArrowCircleRight className="btn-icon" />
-          </Button>
-          <Button
-            className="gh-link"
-            href={project.ghLink}
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub Repo
-            <FaGithub className="btn-icon" />
-          </Button>
-          </div>
-        </div>
-      ))}
-      <button
-        className="prev"
-        onClick={() =>
-          setActiveIndex(
-            (prevIndex) =>
-              (prevIndex + myProjects.length - 1) % myProjects.length
-          )
-        }
-      >
-        <FaArrowCircleLeft />
-      </button>
-      <button
-        className="next"
-        onClick={() =>
-          setActiveIndex((prevIndex) => (prevIndex + 1) % myProjects.length)
-        }
-      >
-        <FaArrowCircleRight />
-      </button>
+          <FaArrowCircleLeft />
+        </button>
+        <button
+          className="next"
+          onClick={() =>
+            setActiveIndex((prevIndex) => (prevIndex + 1) % myProjects.length)
+          }
+        >
+          <FaArrowCircleRight />
+        </button>
+      </div>
     </div>
   );
 }

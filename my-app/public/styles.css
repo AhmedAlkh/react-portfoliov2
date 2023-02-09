@@ -141,8 +141,12 @@ a.nav-link {
 }
 
 /* PORTFOLIO */
+.carousel-container {
+  min-height: 100vh;
+}
+
 .carousel {
-  display: flex;
+  display: flex-block;
   justify-content: center;
   align-items: center;
   height: 700px;
@@ -298,6 +302,7 @@ button {
 }
 
 .contact-page {
+  min-height: 100vh;
   text-align: center;
   color: var(--clr-space-cadet);
 }
@@ -310,7 +315,7 @@ button {
   width: 80%;
   background-color: rgba(90, 110, 156, 0.5);
   padding: 15px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   border-radius: 25px;
 }
 

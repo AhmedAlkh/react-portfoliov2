@@ -1,7 +1,7 @@
 import React from "react";
 
 function Resume() {
-  return <div></div>;
+  return <div className="resume-container"></div>;
 }
 
 export default Resume;
