@@ -24,7 +24,7 @@ function App() {
     }
   };
   return (
-    <div>
+    <div className="app-container">
       <Particles />
       <Header
         currentSection={currentSection}
