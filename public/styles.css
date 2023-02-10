@@ -55,7 +55,11 @@ body {
 }
 
 .navbar-toggler:hover {
-  background-color: var(--clr-blue-purple);
+  background-color: var(--clr-slate-blue);
+}
+
+.navbar-toggler.collapsed {
+  border: 2px solid;
 }
 
 a.nav-link {
@@ -70,8 +74,6 @@ a.nav-link {
 
 .nav-link.unactive-link {
   color: var(--clr-space-cadet) !important;
-  /* -webkit-transform: skew(-10deg) !important;
-    transform: skew(-10deg) !important; */
 }
 
 .unactive-link {
@@ -94,30 +96,6 @@ a.nav-link {
   /* color: var(--clr-middle-blue); */
   -webkit-transform: skew(-10deg);
   transform: skew(-10deg);
-}
-
-.about-active {
-  color: var(--clr-middle-blue) !important;
-  -webkit-transform: skew(-10deg) !important;
-  transform: skew(-10deg) !important;
-}
-
-.portfolio-active {
-  color: var(--clr-middle-blue) !important;
-  -webkit-transform: skew(-10deg) !important;
-  transform: skew(-10deg) !important;
-}
-
-.resume-active {
-  color: var(--clr-middle-blue) !important;
-  -webkit-transform: skew(-10deg) !important;
-  transform: skew(-10deg) !important;
-}
-
-.contact-active {
-  color: var(--clr-middle-blue) !important;
-  -webkit-transform: skew(-10deg) !important;
-  transform: skew(-10deg) !important;
 }
 
 /* ABOUT */
@@ -300,6 +278,82 @@ button {
 
 .btn-icon {
   margin-left: 5px;
+}
+
+/* RESUME */
+.resume-page-container {
+  margin-top: 60px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 10px;
+}
+
+@media (max-width: 767px) {
+  .resume-page-container {
+    margin-top: 20px;
+  }
+
+  /* .resume-div {
+    width: 100%;
+  }
+
+  .resume-image {
+    width: 100%;
+  } */
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-item img {
+    width: 180px;
+    height: 80px;
+  }
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.resume-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.resume-image {
+  width: 80%;
+}
+
+.resume-btn {
+  border: none !important;
+  width: 170px;
+  background-color: var(--clr-middle-blue) !important;
+  color: var(--clr-space-cadet) !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: transform 0.2s !important; /* Animation for zoom in effect */
+}
+
+.resume-btn:hover {
+  background-color: var(--clr-blue-purple) !important;
+  color: var(--clr-sky-blue) !important;
+  transform: scale(1.1) !important;
 }
 
 /* CONTACT */
