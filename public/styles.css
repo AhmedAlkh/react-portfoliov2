@@ -127,7 +127,6 @@ a.nav-link {
 /* PORTFOLIO */
 .carousel-container {
   min-height: 90vh;
-  /* margin-bottom: 20px; */
 }
 
 .carousel {
@@ -235,11 +234,11 @@ button {
 
 @media (max-width: 44.563rem) {
   .prev {
-    left: -10px;
+    left: -27px;
   }
 
   .next {
-    right: -10px;
+    right: -27px;
   }
 }
 
