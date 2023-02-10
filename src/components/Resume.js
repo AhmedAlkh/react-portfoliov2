@@ -42,7 +42,7 @@ function Resume() {
         </div>
       </div>
       <div className="resume-div">
-      <Button
+        <Button
           className="resume-btn"
           href={resumePdf}
           target="_blank"
