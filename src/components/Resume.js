@@ -15,6 +15,7 @@ import resumePdf from "../assets/resume/resume.pdf";
 function Resume() {
   return (
     <div className="resume-page-container">
+      <h1>Skills</h1>
       <div class="grid-container center">
         <div class="grid-item">
           <img className="skill-logo" src={htmlLogo} alt="html logo" />
