@@ -110,11 +110,19 @@ a.nav-link {
   padding-bottom: 10px;
 }
 
+.about main div {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .about main p {
   color: var(--clr-space-cadet);
   font-weight: 700;
   font-size: 18px;
   margin-block: 0 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: justify;
 }
 
 .about img {
