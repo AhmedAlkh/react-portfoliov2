@@ -135,6 +135,7 @@ a.nav-link {
 /* PORTFOLIO */
 .carousel-container {
   min-height: 90vh;
+  margin-bottom: 20px;
 }
 
 .carousel {
